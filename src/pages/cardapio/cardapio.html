@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>cardapio</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-tabs>
+  <ion-tab tabIcon="settings" tabTitle="Lanche (manhã)" [root]="tab1"></ion-tab>
+  <ion-tab tabIcon="person" tabTitle="Almoço" [root]="tab2"></ion-tab>
+  <ion-tab tabIcon="person" tabTitle="Lanche (tarde)" [root]="tab3"></ion-tab>
+  <ion-tab tabIcon="person" tabTitle="Janta" [root]="tab4"></ion-tab>
+</ion-tabs>

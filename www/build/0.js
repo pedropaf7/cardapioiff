@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 272:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SnackPageModule", function() { return SnackPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SugestaoPageModule", function() { return SugestaoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__snack__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sugestao__ = __webpack_require__(285);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SnackPageModule = /** @class */ (function () {
-    function SnackPageModule() {
+var SugestaoPageModule = /** @class */ (function () {
+    function SugestaoPageModule() {
     }
-    SnackPageModule = __decorate([
+    SugestaoPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__snack__["a" /* SnackPage */],
+                __WEBPACK_IMPORTED_MODULE_2__sugestao__["a" /* SugestaoPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__snack__["a" /* SnackPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sugestao__["a" /* SugestaoPage */]),
             ],
         })
-    ], SnackPageModule);
-    return SnackPageModule;
+    ], SugestaoPageModule);
+    return SugestaoPageModule;
 }());
 
-//# sourceMappingURL=snack.module.js.map
+//# sourceMappingURL=sugestao.module.js.map
 
 /***/ }),
 
-/***/ 276:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SnackPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SugestaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,29 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the SnackPage page.
+ * Generated class for the SugestaoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var SnackPage = /** @class */ (function () {
-    function SnackPage(navCtrl, navParams) {
+var SugestaoPage = /** @class */ (function () {
+    function SugestaoPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    SnackPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad SnackPage');
+    SugestaoPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SugestaoPage');
     };
-    SnackPage = __decorate([
+    SugestaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-snack',template:/*ion-inline-start:"/home/pedro/Downloads/cardapio/src/pages/snack/snack.html"*/'<!--\n  Generated template for the SnackPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>snack</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapio/src/pages/snack/snack.html"*/,
+            selector: 'page-sugestao',template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/pages/sugestao/sugestao.html"*/'<!--\n  Generated template for the SugestaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>sugestao</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/pages/sugestao/sugestao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], SnackPage);
-    return SnackPage;
+    ], SugestaoPage);
+    return SugestaoPage;
 }());
 
-//# sourceMappingURL=snack.js.map
+//# sourceMappingURL=sugestao.js.map
 
 /***/ })
 
