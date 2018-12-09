@@ -1,0 +1,7 @@
+{
+  "name": "cardapio",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
