@@ -42,19 +42,19 @@ var map = {
 		5
 	],
 	"../pages/refeitorio/refeitorio.module": [
-		273,
+		274,
 		4
 	],
 	"../pages/snack/snack.module": [
-		274,
+		273,
 		3
 	],
 	"../pages/sobre/sobre.module": [
-		275,
+		276,
 		2
 	],
 	"../pages/staff/staff.module": [
-		276,
+		275,
 		1
 	],
 	"../pages/sugestao/sugestao.module": [
@@ -184,10 +184,10 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/cardapio/cardapio.module#CardapioPageModule', name: 'CardapioPage', segment: 'cardapio', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/dinner/dinner.module#DinnerPageModule', name: 'DinnerPage', segment: 'dinner', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lunch/lunch.module#LunchPageModule', name: 'LunchPage', segment: 'lunch', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/refeitorio/refeitorio.module#RefeitorioPageModule', name: 'RefeitorioPage', segment: 'refeitorio', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/snack/snack.module#SnackPageModule', name: 'SnackPage', segment: 'snack', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/sobre/sobre.module#SobrePageModule', name: 'SobrePage', segment: 'sobre', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/refeitorio/refeitorio.module#RefeitorioPageModule', name: 'RefeitorioPage', segment: 'refeitorio', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/staff/staff.module#StaffPageModule', name: 'StaffPage', segment: 'staff', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sobre/sobre.module#SobrePageModule', name: 'SobrePage', segment: 'sobre', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sugestao/sugestao.module#SugestaoPageModule', name: 'SugestaoPage', segment: 'sugestao', priority: 'low', defaultHistory: [] }
                     ]
                 })

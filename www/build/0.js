@@ -56,12 +56,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the SugestaoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 var SugestaoPage = /** @class */ (function () {
     function SugestaoPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;

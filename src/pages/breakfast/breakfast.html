@@ -2,107 +2,53 @@
     <ion-card>
       <ion-navbar color="secondary">
       <ion-card-header>
-        <strong>Lanche da Manhã</strong>
+        <ion-title text-center><strong>Lanche da Manhã</strong></ion-title>
       </ion-card-header></ion-navbar>
       <ion-card-content>
         Início:   8:30 <br>
         Término: 9:00
       </ion-card-content>
       </ion-card>
+
+      <ion-segment color="dark" [(ngModel)]="week">
+
+        <ion-segment-button value="0" (click)="selectedTab(0)">
+          SEG
+        </ion-segment-button>
+        <ion-segment-button value="1" (click)="selectedTab(1)">
+          TER
+        </ion-segment-button>
+        <ion-segment-button value="2" (click)="selectedTab(2)">
+          QUA
+        </ion-segment-button>
+        <ion-segment-button value="3" (click)="selectedTab(3)">
+          QUI
+        </ion-segment-button>
+        <ion-segment-button value="4" (click)="selectedTab(4)">
+          SEX
+        </ion-segment-button>
+
+      </ion-segment>
 </ion-header>
 
 <ion-content>
+  <ion-slides #slider (ionSlideWillChange)="moveTab($event)">
+    <ion-slide>
+      <h1>SEGUNDA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>TERÇA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>QUARTA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>QUINTA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>SEXTA</h1>
+    </ion-slide>
 
-  <div padding>
-  <ion-segment [(ngModel)]="pet">
-    <ion-segment-button value="Seg">
-      Seg
-    </ion-segment-button>
-    <ion-segment-button value="Ter">
-      Ter
-    </ion-segment-button>
-    <ion-segment-button value="Qua">
-      Qua
-    </ion-segment-button>
-    <ion-segment-button value="Qui">
-      Qui
-    </ion-segment-button>
-    <ion-segment-button value="Sex">
-      Sex
-    </ion-segment-button>
-  </ion-segment>
-
-</div>
-
-<div [ngSwitch]="pet">
-  <ion-list *ngSwitchCase="'Seg'">
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="img/thumbnail-puppy-1.jpg">
-      </ion-thumbnail>
-      <h2>Ruby</h2>
-    </ion-item>
-    <tbody>
-										<tr>
-											<th scope="row">Salada 1</th>
-											<td>REPOLHO (80g = 13,7kcal)</td>
-										</tr>
-										<tr>
-											<th scope="row">Salada 2</th>
-											<td>PEPINO COM TOMATE (80g = 9kcal)</td>
-										</tr>
-										<tr>
-											<th scope="row">Salada 3</th>
-											<td>BETERRABA RALADA (80g = 39,1kcal)</td>
-										</tr>
-										<tr>
-											<th scope="row">Complemento</th>
-											<td>ARROZ BRANCO (200g =260 kcal)<br> FEIJÃO PRETO (160g = 145 Kcal)<br> ARROZ INTEGRAL (200g = 224kcal)<br></td>
-										</tr>
-										<!-- <tr>
-											<th scope="row">Complemento 2</th>
-											<td>Feijão preto (160g = 145Kcal)</td>
-										</tr>
-										<tr>
-											<th scope="row">Complemento 3</th>
-											<td>Arroz integral (200g = 224Kcal)</td>
-										</tr> -->
-										<tr>
-											<th scope="row">Guarnição</th>
-											<td>BATATA PALHA (35g=217Kcal)</td>
-										</tr>
-										<tr>
-											<th scope="row">Proteína 1</th>
-											<td>STROGONOFF DE FRANGO (120g=250KCAL)</td>
-										</tr>
-										<tr>
-											<th scope="row">Proteína 2</th>
-											<td>CARNE A PRIMAVERA (140g = 190kcal)</td>
-										</tr>
-										<tr>
-											<th scope="row">Proteína 3</th>
-											<td>STROGONOFF DE VEGETARIANO (160g = 195 kcal)</td>
-										</tr>
-										<tr>
-											<th scope="row">Sobremesa 1</th>
-											<td>MAÇÃ (80kcal)</td>
-										</tr>
-										<tr>
-											<th scope="row">Sobremesa 2</th>
-											<td>LARANJA (66 kcal)</td>
-										</tr>
-										<tr>
-											<th scope="row">Suco</th>
-											<td>SUCO DE GOIABA (200ml = 120 kcal)</td>
-										</tr>
-										<tr>
-											<th scope="row">Valor Calórico</th>
-											<td>1100Kcal</td>
-										</tr>
-
-									</tbody>
-  </ion-list>
-</div>
-
+  </ion-slides>
 
 </ion-content>
