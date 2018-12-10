@@ -4,7 +4,7 @@ import { CardapioPage } from './cardapio';
 
 @NgModule({
   declarations: [
-    CardapioPage,
+    CardapioPage
   ],
   imports: [
     IonicPageModule.forChild(CardapioPage),

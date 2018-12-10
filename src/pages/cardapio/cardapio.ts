@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
@@ -8,7 +8,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CardapioPage {
   tab1 = 'BreakfastPage';
-  tab2 = 'LunchPage'
+  tab2 = 'LunchPage';
   tab3 = 'SnackPage';
   tab4 = 'DinnerPage';
 

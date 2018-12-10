@@ -1,14 +1,14 @@
 webpackJsonp([5],{
 
-/***/ 271:
+/***/ 272:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DinnerPageModule", function() { return DinnerPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LunchPageModule", function() { return LunchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dinner__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lunch__ = __webpack_require__(282);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DinnerPageModule = /** @class */ (function () {
-    function DinnerPageModule() {
+var LunchPageModule = /** @class */ (function () {
+    function LunchPageModule() {
     }
-    DinnerPageModule = __decorate([
+    LunchPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__dinner__["a" /* DinnerPage */],
+                __WEBPACK_IMPORTED_MODULE_2__lunch__["a" /* LunchPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__dinner__["a" /* DinnerPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__lunch__["a" /* LunchPage */]),
             ],
         })
-    ], DinnerPageModule);
-    return DinnerPageModule;
+    ], LunchPageModule);
+    return LunchPageModule;
 }());
 
-//# sourceMappingURL=dinner.module.js.map
+//# sourceMappingURL=lunch.module.js.map
 
 /***/ }),
 
-/***/ 280:
+/***/ 282:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DinnerPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LunchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -57,29 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the DinnerPage page.
+ * Generated class for the LunchPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var DinnerPage = /** @class */ (function () {
-    function DinnerPage(navCtrl, navParams) {
+var LunchPage = /** @class */ (function () {
+    function LunchPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    DinnerPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DinnerPage');
+    LunchPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad LunchPage');
     };
-    DinnerPage = __decorate([
+    LunchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-dinner',template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/pages/dinner/dinner.html"*/'<!--\n  Generated template for the DinnerPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>dinner</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/pages/dinner/dinner.html"*/,
+            selector: 'page-lunch',template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/pages/lunch/lunch.html"*/'<ion-header>\n    <ion-card>\n      <ion-navbar color="secondary">\n      <ion-card-header>\n        <strong>Almoço</strong>\n      </ion-card-header></ion-navbar>\n      <ion-card-content>\n        Início:   11:30 <br>\n        Término: 13:30\n      </ion-card-content>\n      </ion-card>\n</ion-header>\n\n<ion-content>\n\n  <div padding>\n  <ion-segment >\n    <ion-segment-button value="Seg">\n      Seg\n    </ion-segment-button>\n    <ion-segment-button value="Ter">\n      Ter\n    </ion-segment-button>\n    <ion-segment-button value="Qua">\n      Qua\n    </ion-segment-button>\n    <ion-segment-button value="Qui">\n      Qui\n    </ion-segment-button>\n    <ion-segment-button value="Sex">\n      Sex\n    </ion-segment-button>\n  </ion-segment>\n\n</div>\n\n</ion-content>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/pages/lunch/lunch.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], DinnerPage);
-    return DinnerPage;
+    ], LunchPage);
+    return LunchPage;
 }());
 
-//# sourceMappingURL=dinner.js.map
+//# sourceMappingURL=lunch.js.map
 
 /***/ })
 

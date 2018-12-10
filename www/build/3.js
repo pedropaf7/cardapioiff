@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 273:
+/***/ 274:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SnackPageModule", function() { return SnackPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__snack__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__snack__ = __webpack_require__(284);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var SnackPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 282:
+/***/ 284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72,7 +72,7 @@ var SnackPage = /** @class */ (function () {
     };
     SnackPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-snack',template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/pages/snack/snack.html"*/'<!--\n  Generated template for the SnackPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>snack</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/pages/snack/snack.html"*/,
+            selector: 'page-snack',template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/pages/snack/snack.html"*/'<ion-header>\n    <ion-card>\n      <ion-navbar color="secondary">\n      <ion-card-header>\n        <strong>Lanche da Tarde</strong>\n      </ion-card-header></ion-navbar>\n      <ion-card-content>\n        Início:   15:30 <br>\n        Término: 16:50\n      </ion-card-content>\n      </ion-card>\n</ion-header>\n\n<ion-content>\n\n  <div padding>\n  <ion-segment >\n    <ion-segment-button value="Seg">\n      Seg\n    </ion-segment-button>\n    <ion-segment-button value="Ter">\n      Ter\n    </ion-segment-button>\n    <ion-segment-button value="Qua">\n      Qua\n    </ion-segment-button>\n    <ion-segment-button value="Qui">\n      Qui\n    </ion-segment-button>\n    <ion-segment-button value="Sex">\n      Sex\n    </ion-segment-button>\n  </ion-segment>\n\n</div>\n\n</ion-content>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/pages/snack/snack.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], SnackPage);
