@@ -1,0 +1,55 @@
+<ion-header>
+    <ion-card>
+      <ion-navbar color="secondary">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title text-center > CADASTRAR REFEIÇÃO</ion-title>
+      </ion-navbar>
+      <ion-card-content>
+        <strong> Dia: </strong>11/12/18
+      </ion-card-content>
+      </ion-card>
+
+      <ion-segment color="dark" [(ngModel)]="week">
+
+        <ion-segment-button value="0" (click)="selectedTab(0)">
+          SEG
+        </ion-segment-button>
+        <ion-segment-button value="1" (click)="selectedTab(1)">
+          TER
+        </ion-segment-button>
+        <ion-segment-button value="2" (click)="selectedTab(2)">
+          QUA
+        </ion-segment-button>
+        <ion-segment-button value="3" (click)="selectedTab(3)">
+          QUI
+        </ion-segment-button>
+        <ion-segment-button value="4" (click)="selectedTab(4)">
+          SEX
+        </ion-segment-button>
+
+      </ion-segment>
+</ion-header>
+
+<ion-content>
+  <ion-slides #slider (ionSlideWillChange)="moveTab($event)">
+    <ion-slide>
+      <h1>SEGUNDA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>TERÇA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>QUARTA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>QUINTA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>SEXTA</h1>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

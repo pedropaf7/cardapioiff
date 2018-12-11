@@ -1,37 +1,53 @@
 <ion-header>
     <ion-card>
       <ion-navbar color="secondary">
-      <ion-card-header>
-        <strong>Janta</strong>
-      </ion-card-header></ion-navbar>
+        <ion-title text-center > JANTA</ion-title>
+      </ion-navbar>
       <ion-card-content>
-        Início:   7:20 <br>
-        Término: 8:50
+        <strong>Início:   </strong>19:20 <br>
+        <strong> Término: </strong>20:40
       </ion-card-content>
       </ion-card>
+
+      <ion-segment color="dark" [(ngModel)]="week">
+
+        <ion-segment-button value="0" (click)="selectedTab(0)">
+          SEG
+        </ion-segment-button>
+        <ion-segment-button value="1" (click)="selectedTab(1)">
+          TER
+        </ion-segment-button>
+        <ion-segment-button value="2" (click)="selectedTab(2)">
+          QUA
+        </ion-segment-button>
+        <ion-segment-button value="3" (click)="selectedTab(3)">
+          QUI
+        </ion-segment-button>
+        <ion-segment-button value="4" (click)="selectedTab(4)">
+          SEX
+        </ion-segment-button>
+
+      </ion-segment>
 </ion-header>
 
 <ion-content>
+  <ion-slides #slider (ionSlideWillChange)="moveTab($event)">
+    <ion-slide>
+      <h1>SEGUNDA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>TERÇA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>QUARTA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>QUINTA</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>SEXTA</h1>
+    </ion-slide>
 
-  <div padding>
-  <ion-segment >
-    <ion-segment-button value="Seg">
-      Seg
-    </ion-segment-button>
-    <ion-segment-button value="Ter">
-      Ter
-    </ion-segment-button>
-    <ion-segment-button value="Qua">
-      Qua
-    </ion-segment-button>
-    <ion-segment-button value="Qui">
-      Qui
-    </ion-segment-button>
-    <ion-segment-button value="Sex">
-      Sex
-    </ion-segment-button>
-  </ion-segment>
-
-</div>
+  </ion-slides>
 
 </ion-content>

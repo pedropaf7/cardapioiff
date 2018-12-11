@@ -10,22 +10,26 @@
 </ion-header>
 
 <ion-content>
-    <ion-list>
 
+      <form [formGroup]='cadastro'>
+      <ion-list>
       <ion-item>
         <ion-label floating>Usuário</ion-label>
-        <ion-input type="text" value=""></ion-input>
+        <ion-input type="text" formControlName="user" [ngClass]="{'invalida': !cadastro.get('user').valid && cadastro.get('user').dirty}"></ion-input>
       </ion-item>
+      <p *ngIf="!cadastro.get('user').valid && cadastro.get('user').dirty">Preencha o campo corretamente</p>
 
       <ion-item>
         <ion-label floating>Senha</ion-label>
-        <ion-input type="text" value=""></ion-input>
+        <ion-input type="password" formControlName="senha" [ngClass]="{'invalida': !cadastro.get('senha').valid && cadastro.get('senha').dirty}"></ion-input>
       </ion-item>
+       <p *ngIf="cadastro.get('senha').errors && cadastro.get('senha').errors.invalido">Senha inválida</p>
 
     </ion-list>
 
     <div padding>
-      <button ion-button color="primary" block>Entrar</button>
+      <button ion-button color="primary" block (click)="entrar()">Entrar</button>
     </div>
+    </form>
 
 </ion-content>

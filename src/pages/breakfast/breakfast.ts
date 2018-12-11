@@ -17,8 +17,8 @@ export class BreakfastPage {
     this.slider.slideTo(sld);
   }
 
-  moveTab(event){
-    this.week = event._snapIndex.toString();
+  moveTab($event){
+    this.week = $event._snapIndex.toString();
   }
 
 

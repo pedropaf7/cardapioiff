@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 270:
+/***/ 271:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardapioPageModule", function() { return CardapioPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cardapio__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cardapio__ = __webpack_require__(282);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -27,7 +27,7 @@ var CardapioPageModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__cardapio__["a" /* CardapioPage */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__cardapio__["a" /* CardapioPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__cardapio__["a" /* CardapioPage */]),
             ],
         })
     ], CardapioPageModule);
@@ -38,7 +38,7 @@ var CardapioPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 280:
+/***/ 282:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70,9 +70,9 @@ var CardapioPage = /** @class */ (function () {
     };
     CardapioPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-cardapio',template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/pages/cardapio/cardapio.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Cardápio IFF</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n<ion-tabs>\n  <ion-tab tabIcon="settings" tabTitle="Lanche (manhã)" [root]="tab1"></ion-tab>\n  <ion-tab tabIcon="person" tabTitle="Alomoço" [root]="tab2"></ion-tab>\n  <ion-tab tabIcon="settings" tabTitle="Lanche (tarde)" [root]="tab3"></ion-tab>\n  <ion-tab tabIcon="person" tabTitle="Janta" [root]="tab4"></ion-tab>\n</ion-tabs>\n</ion-content>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/pages/cardapio/cardapio.html"*/,
+            selector: 'page-cardapio',template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/pages/cardapio/cardapio.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Cardápio IFF</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n<ion-tabs>\n  <ion-tab tabIcon="md-partly-sunny" tabTitle="Café da Manhã" [root]="tab1"></ion-tab>\n  <ion-tab tabIcon="md-sunny" tabTitle="Alomoço" [root]="tab2"></ion-tab>\n  <ion-tab tabIcon="ios-cloudy-night-outline" tabTitle="Lanche" [root]="tab3"></ion-tab>\n  <ion-tab tabIcon="md-cloudy-night" tabTitle="Janta" [root]="tab4"></ion-tab>\n</ion-tabs>\n</ion-content>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/pages/cardapio/cardapio.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], CardapioPage);
     return CardapioPage;
 }());

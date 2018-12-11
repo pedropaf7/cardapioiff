@@ -1,12 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the LunchPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Component, ViewChild} from '@angular/core';
+import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -14,12 +7,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'lunch.html',
 })
 export class LunchPage {
+  @ViewChild('slider') slider: Slides;
+  week = "0";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LunchPage');
+  selectedTab(sld){
+    this.slider.slideTo(sld);
+  }
+
+  moveTab($event){
+    this.week = $event._snapIndex.toString();
   }
 
 }

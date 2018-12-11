@@ -1,4 +1,4 @@
-webpackJsonp([10],{
+webpackJsonp([11],{
 
 /***/ 108:
 /***/ (function(module, exports) {
@@ -23,22 +23,26 @@ webpackEmptyAsyncContext.id = 108;
 var map = {
 	"../pages/app/app.module": [
 		268,
-		9
+		10
 	],
 	"../pages/breakfast/breakfast.module": [
 		269,
+		9
+	],
+	"../pages/cadastro-food/cadastro-food.module": [
+		270,
 		8
 	],
 	"../pages/cardapio/cardapio.module": [
-		270,
+		271,
 		7
 	],
 	"../pages/dinner/dinner.module": [
-		271,
+		272,
 		6
 	],
 	"../pages/lunch/lunch.module": [
-		272,
+		273,
 		5
 	],
 	"../pages/refeitorio/refeitorio.module": [
@@ -46,7 +50,7 @@ var map = {
 		4
 	],
 	"../pages/snack/snack.module": [
-		273,
+		275,
 		3
 	],
 	"../pages/sobre/sobre.module": [
@@ -54,11 +58,11 @@ var map = {
 		2
 	],
 	"../pages/staff/staff.module": [
-		275,
+		277,
 		1
 	],
 	"../pages/sugestao/sugestao.module": [
-		277,
+		278,
 		0
 	]
 };
@@ -111,14 +115,14 @@ var HomePage = /** @class */ (function () {
         this.nav.setRoot(page.component);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */])
     ], HomePage.prototype, "nav", void 0);
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/pages/home/home.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar color="primary">\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
     ], HomePage);
     return HomePage;
 }());
@@ -177,22 +181,23 @@ var AppModule = /** @class */ (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/app/app.module#AppPageModule', name: 'AppPage', segment: 'app', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/breakfast/breakfast.module#BreakfastPageModule', name: 'BreakfastPage', segment: 'breakfast', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/cadastro-food/cadastro-food.module#CadastroFoodPageModule', name: 'CadastroFoodPage', segment: 'cadastro-food', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cardapio/cardapio.module#CardapioPageModule', name: 'CardapioPage', segment: 'cardapio', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/dinner/dinner.module#DinnerPageModule', name: 'DinnerPage', segment: 'dinner', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lunch/lunch.module#LunchPageModule', name: 'LunchPage', segment: 'lunch', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/snack/snack.module#SnackPageModule', name: 'SnackPage', segment: 'snack', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/refeitorio/refeitorio.module#RefeitorioPageModule', name: 'RefeitorioPage', segment: 'refeitorio', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/staff/staff.module#StaffPageModule', name: 'StaffPage', segment: 'staff', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/snack/snack.module#SnackPageModule', name: 'SnackPage', segment: 'snack', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sobre/sobre.module#SobrePageModule', name: 'SobrePage', segment: 'sobre', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/staff/staff.module#StaffPageModule', name: 'StaffPage', segment: 'staff', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sugestao/sugestao.module#SugestaoPageModule', name: 'SugestaoPage', segment: 'sugestao', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */]
@@ -200,7 +205,7 @@ var AppModule = /** @class */ (function () {
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
             ]
         })
     ], AppModule);
@@ -248,7 +253,7 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());

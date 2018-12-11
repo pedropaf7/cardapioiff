@@ -1,14 +1,14 @@
 webpackJsonp([9],{
 
-/***/ 268:
+/***/ 269:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppPageModule", function() { return AppPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BreakfastPageModule", function() { return BreakfastPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breakfast__ = __webpack_require__(280);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AppPageModule = /** @class */ (function () {
-    function AppPageModule() {
+var BreakfastPageModule = /** @class */ (function () {
+    function BreakfastPageModule() {
     }
-    AppPageModule = __decorate([
+    BreakfastPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__app__["a" /* AppPage */],
+                __WEBPACK_IMPORTED_MODULE_2__breakfast__["a" /* BreakfastPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__app__["a" /* AppPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__breakfast__["a" /* BreakfastPage */]),
             ],
         })
-    ], AppPageModule);
-    return AppPageModule;
+    ], BreakfastPageModule);
+    return BreakfastPageModule;
 }());
 
-//# sourceMappingURL=app.module.js.map
+//# sourceMappingURL=breakfast.module.js.map
 
 /***/ }),
 
-/***/ 278:
+/***/ 280:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BreakfastPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -56,30 +56,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the AppPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var AppPage = /** @class */ (function () {
-    function AppPage(navCtrl, navParams) {
+var BreakfastPage = /** @class */ (function () {
+    function BreakfastPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.week = "0";
     }
-    AppPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AppPage');
+    BreakfastPage.prototype.selectedTab = function (sld) {
+        this.slider.slideTo(sld);
     };
-    AppPage = __decorate([
+    BreakfastPage.prototype.moveTab = function ($event) {
+        this.week = $event._snapIndex.toString();
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('slider'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Slides */])
+    ], BreakfastPage.prototype, "slider", void 0);
+    BreakfastPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-app',template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/pages/app/app.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>App</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n  <ion-card>\n\n    <img src="assets/imgs/logo.png"/>\n\n    <ion-card-content>\n      <ion-card-title>\n        Pedro Ferreira\'s Company\n      </ion-card-title>\n      <p>\n        Aplicativo desenvolvido na disciplina de Programação Orientada a Objetos Aplicada\n      </p>\n    </ion-card-content>\n\n    <ion-item>\n      <ion-icon name=\'settings\' item-start style="color: green"></ion-icon>\n      IF Fluminense\n      <ion-badge item-end>campus Campos-Centro</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name=\'settings\' item-start style="color: green"></ion-icon>\n      Curso\n      <ion-badge item-end>Sistemas de Informação</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name=\'settings\' item-start style="color: green"></ion-icon>\n      Período\n      <ion-badge item-end>5º</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name=\'settings\' item-start style="color: green"></ion-icon>\n      Ano\n      <ion-badge item-end>2018</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name=\'settings\' item-start style="color: green"></ion-icon>\n      E-mail\n      <ion-badge item-end>pedropaf7@gmail.com</ion-badge>\n    </ion-item>\n\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/pages/app/app.html"*/,
+            selector: 'page-breakfast',template:/*ion-inline-start:"/home/pedro/Downloads/cardapioiff/src/pages/breakfast/breakfast.html"*/'<ion-header>\n    <ion-card>\n      <ion-navbar color="secondary">\n        <ion-title text-center > CAFÉ DA MANHÃ</ion-title>\n      </ion-navbar>\n      <ion-card-content>\n        <strong>Início:   </strong>8:30 <br>\n        <strong> Término: </strong>9:00\n      </ion-card-content>\n      </ion-card>\n\n      <ion-segment color="dark" [(ngModel)]="week">\n\n        <ion-segment-button value="0" (click)="selectedTab(0)">\n          SEG\n        </ion-segment-button>\n        <ion-segment-button value="1" (click)="selectedTab(1)">\n          TER\n        </ion-segment-button>\n        <ion-segment-button value="2" (click)="selectedTab(2)">\n          QUA\n        </ion-segment-button>\n        <ion-segment-button value="3" (click)="selectedTab(3)">\n          QUI\n        </ion-segment-button>\n        <ion-segment-button value="4" (click)="selectedTab(4)">\n          SEX\n        </ion-segment-button>\n\n      </ion-segment>\n</ion-header>\n\n<ion-content>\n  <ion-slides #slider (ionSlideWillChange)="moveTab($event)">\n    <ion-slide>\n      <h1>SEGUNDA</h1>\n    </ion-slide>\n    <ion-slide>\n      <h1>TERÇA</h1>\n    </ion-slide>\n    <ion-slide>\n      <h1>QUARTA</h1>\n    </ion-slide>\n    <ion-slide>\n      <h1>QUINTA</h1>\n    </ion-slide>\n    <ion-slide>\n      <h1>SEXTA</h1>\n    </ion-slide>\n\n  </ion-slides>\n\n</ion-content>\n'/*ion-inline-end:"/home/pedro/Downloads/cardapioiff/src/pages/breakfast/breakfast.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], AppPage);
-    return AppPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    ], BreakfastPage);
+    return BreakfastPage;
 }());
 
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=breakfast.js.map
 
 /***/ })
 
